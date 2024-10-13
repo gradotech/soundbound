@@ -1,0 +1,75 @@
+{
+  "name": "room_to_volume",
+  "description": "Soundbound room to volume converting model.",
+  "version": "1",
+  "author": "Radoslav Tsvetkov",
+  "license": "Apache License 2",
+  "inputs": [
+    {
+      "name": "x",
+      "type": "float",
+      "min": 0,
+      "max": 340
+    },
+    {
+      "name": "y",
+      "type": "float",
+      "min": 0,
+      "max": 360
+    }
+  ],
+  "outputs": [
+    {
+      "name": "a",
+      "type": "float",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "b",
+      "type": "float",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "c",
+      "type": "float",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "d",
+      "type": "float",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "speakers": [
+    {
+      "id": "a",
+      "coordinates": [0, 0]
+    },
+    {
+      "id": "b",
+      "coordinates": [340, 0]
+    },
+    {
+      "id": "c",
+      "coordinates": [0, 360]
+    },
+    {
+      "id": "d",
+      "coordinates": [340, 360]
+    }
+  ],
+  "beacons": [
+    {
+      "id1": "2f234454-cf6d-4a0f-adf2-f4911ba9ffa6",
+      "measures": "x"
+    },
+    {
+      "id1": "7b8d4e1f-9a3c-6f2b-0e5d-8c9a7d3b2e4f",
+      "measures": "y"
+    }
+  ]
+}
